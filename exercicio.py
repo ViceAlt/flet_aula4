@@ -2,7 +2,9 @@ import flet as ft
 
 def main(page: ft.Page):
     def mostrar_mensagem(e):
-        page.add(ft.Text("Ai."))
+        page.add(ft.Text("Ai.",
+        color=ft.Colors.RED,
+        italic=True))
         
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
