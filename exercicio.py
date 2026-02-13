@@ -5,6 +5,10 @@ def main(page: ft.Page):
         page.add(ft.Text("Ai.",
         color=ft.Colors.RED,
         italic=True))
+    def mostrar_mensagem(e):
+        page.add(ft.Text("Ai.",
+        color=ft.Colors.RED,
+        italic=True))
         
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
@@ -22,8 +26,6 @@ def main(page: ft.Page):
             content="Bater no coelho",
             on_click=mostrar_mensagem,
             bgcolor="#1c0138"
-            
         )
     )
-
 ft.app(main)
